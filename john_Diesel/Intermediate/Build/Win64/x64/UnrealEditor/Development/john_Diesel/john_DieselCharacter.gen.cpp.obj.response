@@ -1,7 +1,7 @@
-"E:\Cal Norwood\Documents\john_Diesel\Intermediate\Build\Win64\UnrealEditor\Inc\john_Diesel\UHT\john_DieselCharacter.gen.cpp"
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\UnrealEditor\Inc\john_Diesel\UHT\john_DieselCharacter.gen.cpp"
 /I .
-/I "E:\Cal Norwood\Documents\john_Diesel\Intermediate\Build\Win64\UnrealEditor\Inc\john_Diesel\UHT"
-/I "E:\Cal Norwood\Documents\john_Diesel\Source"
+/I "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\UnrealEditor\Inc\john_Diesel\UHT"
+/I "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Source"
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
 /I Runtime
@@ -290,12 +290,12 @@
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"E:\Cal Norwood\Documents\john_Diesel\Intermediate\Build\Win64\x64\john_DieselEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h"
-/FI"E:\Cal Norwood\Documents\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\Definitions.john_Diesel.h"
-/Yu"E:\Cal Norwood\Documents\john_Diesel\Intermediate\Build\Win64\x64\john_DieselEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h"
-/Fp"E:\Cal Norwood\Documents\john_Diesel\Intermediate\Build\Win64\x64\john_DieselEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.pch"
-/Fo"E:\Cal Norwood\Documents\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_DieselCharacter.gen.cpp.obj"
-/sourceDependencies "E:\Cal Norwood\Documents\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_DieselCharacter.gen.cpp.dep.json"
+/FI"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\john_DieselEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h"
+/FI"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\Definitions.john_Diesel.h"
+/Yu"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\john_DieselEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h"
+/Fp"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\john_DieselEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.pch"
+/Fo"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_DieselCharacter.gen.cpp.obj"
+/sourceDependencies "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_DieselCharacter.gen.cpp.dep.json"
 /Zc:inline
 /nologo
 /Oi

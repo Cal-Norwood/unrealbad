@@ -1,0 +1,23 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-john_Diesel.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\john_DieselEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.obj"
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_Diesel.init.gen.cpp.obj"
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_DieselCharacter.gen.cpp.obj"
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_DieselGameMode.gen.cpp.obj"
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_DieselProjectile.gen.cpp.obj"
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\TP_PickUpComponent.gen.cpp.obj"
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\TP_WeaponComponent.gen.cpp.obj"
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_Diesel.cpp.obj"
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_DieselCharacter.cpp.obj"
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_DieselGameMode.cpp.obj"
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_DieselProjectile.cpp.obj"
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\TP_PickUpComponent.cpp.obj"
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\TP_WeaponComponent.cpp.obj"
+"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\Default.rc2.res"
+/OUT:"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\UnrealEditor-john_Diesel.lib"

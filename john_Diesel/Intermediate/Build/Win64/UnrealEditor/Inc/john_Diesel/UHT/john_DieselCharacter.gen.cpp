@@ -18,6 +18,20 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 	JOHN_DIESEL_API UClass* Z_Construct_UClass_Ajohn_DieselCharacter_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_john_Diesel();
 // End Cross Module References
+	DEFINE_FUNCTION(Ajohn_DieselCharacter::execSetupNormalMovement)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetupNormalMovement();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(Ajohn_DieselCharacter::execSetupSpaceMovement)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SetupSpaceMovement();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(Ajohn_DieselCharacter::execGetHasRifle)
 	{
 		P_FINISH;
@@ -39,6 +53,8 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetHasRifle", &Ajohn_DieselCharacter::execGetHasRifle },
 			{ "SetHasRifle", &Ajohn_DieselCharacter::execSetHasRifle },
+			{ "SetupNormalMovement", &Ajohn_DieselCharacter::execSetupNormalMovement },
+			{ "SetupSpaceMovement", &Ajohn_DieselCharacter::execSetupSpaceMovement },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -122,6 +138,50 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_Ajohn_DieselCharacter_SetupNormalMovement_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_Ajohn_DieselCharacter_SetupNormalMovement_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "john_DieselCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_Ajohn_DieselCharacter_SetupNormalMovement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_Ajohn_DieselCharacter, nullptr, "SetupNormalMovement", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_Ajohn_DieselCharacter_SetupNormalMovement_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_Ajohn_DieselCharacter_SetupNormalMovement_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_Ajohn_DieselCharacter_SetupNormalMovement()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_Ajohn_DieselCharacter_SetupNormalMovement_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_Ajohn_DieselCharacter_SetupSpaceMovement_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_Ajohn_DieselCharacter_SetupSpaceMovement_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "john_DieselCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_Ajohn_DieselCharacter_SetupSpaceMovement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_Ajohn_DieselCharacter, nullptr, "SetupSpaceMovement", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_Ajohn_DieselCharacter_SetupSpaceMovement_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_Ajohn_DieselCharacter_SetupSpaceMovement_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_Ajohn_DieselCharacter_SetupSpaceMovement()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_Ajohn_DieselCharacter_SetupSpaceMovement_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(Ajohn_DieselCharacter);
 	UClass* Z_Construct_UClass_Ajohn_DieselCharacter_NoRegister()
 	{
@@ -174,6 +234,8 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_Ajohn_DieselCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle, "GetHasRifle" }, // 2558504903
 		{ &Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle, "SetHasRifle" }, // 3333334300
+		{ &Z_Construct_UFunction_Ajohn_DieselCharacter_SetupNormalMovement, "SetupNormalMovement" }, // 803671620
+		{ &Z_Construct_UFunction_Ajohn_DieselCharacter_SetupSpaceMovement, "SetupSpaceMovement" }, // 1712563956
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_Ajohn_DieselCharacter_Statics::Class_MetaDataParams[] = {
@@ -297,15 +359,15 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(Ajohn_DieselCharacter);
 	Ajohn_DieselCharacter::~Ajohn_DieselCharacter() {}
-	struct Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics
+	struct Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_Ajohn_DieselCharacter, Ajohn_DieselCharacter::StaticClass, TEXT("Ajohn_DieselCharacter"), &Z_Registration_Info_UClass_Ajohn_DieselCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(Ajohn_DieselCharacter), 2446135727U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_Ajohn_DieselCharacter, Ajohn_DieselCharacter::StaticClass, TEXT("Ajohn_DieselCharacter"), &Z_Registration_Info_UClass_Ajohn_DieselCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(Ajohn_DieselCharacter), 3153571578U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_1799768435(TEXT("/Script/john_Diesel"),
-		Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_1998027907(TEXT("/Script/john_Diesel"),
+		Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
