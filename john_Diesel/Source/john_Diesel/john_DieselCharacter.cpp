@@ -1,12 +1,16 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "john_DieselCharacter.h"
+
+#include <Imath/Deploy/Imath-3.1.3/include/Imath/ImathFun.h>
+
 #include "john_DieselProjectile.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -35,6 +39,7 @@ Ajohn_DieselCharacter::Ajohn_DieselCharacter()
 	//Mesh1P->SetRelativeRotation(FRotator(0.9f, -19.19f, 5.2f));
 	Mesh1P->SetRelativeLocation(FVector(-30.f, 0.f, -150.f));
 
+	MovementComponent = Cast<UCharacterMovementComponent>(GetCharacterMovement());
 }
 
 void Ajohn_DieselCharacter::BeginPlay()
@@ -78,11 +83,17 @@ void Ajohn_DieselCharacter::Move(const FInputActionValue& Value)
 	// input is a Vector2D
 	FVector2D MovementVector = Value.Get<FVector2D>();
 
-	if (Controller != nullptr)
+	if (Controller != nullptr && !InSpace)
 	{
 		// add movement 
 		AddMovementInput(GetActorForwardVector(), MovementVector.Y);
 		AddMovementInput(GetActorRightVector(), MovementVector.X);
+	}
+	else if (InSpace)
+	{
+		UE_LOG(LogTemp, Display, TEXT("Movement"));
+		AddMovementInput(FirstPersonCameraComponent->GetForwardVector() ,MovementVector.Y);
+		AddMovementInput(FirstPersonCameraComponent->GetRightVector() ,MovementVector.X);
 	}
 }
 
@@ -97,6 +108,22 @@ void Ajohn_DieselCharacter::Look(const FInputActionValue& Value)
 		AddControllerYawInput(LookAxisVector.X);
 		AddControllerPitchInput(LookAxisVector.Y);
 	}
+}
+
+void Ajohn_DieselCharacter::SetupSpaceMovement()
+{
+	InSpace = true;
+	MovementComponent->GravityScale = 0;
+	MovementComponent->SetMovementMode(MOVE_Flying);
+	MovementComponent->BrakingFrictionFactor = 0;
+}
+
+void Ajohn_DieselCharacter::SetupNormalMovement()
+{
+	InSpace = false;
+	MovementComponent->GravityScale = 1;
+	MovementComponent->SetMovementMode(MOVE_Walking);
+	MovementComponent->BrakingFrictionFactor = 2;
 }
 
 void Ajohn_DieselCharacter::SetHasRifle(bool bNewHasRifle)

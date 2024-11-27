@@ -71,6 +71,14 @@ protected:
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
 
+	UFUNCTION(BlueprintCallable)
+	void SetupSpaceMovement();
+
+	UFUNCTION(BlueprintCallable)
+	void SetupNormalMovement();
+
+	bool InSpace = false;
+
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
@@ -82,6 +90,6 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
-
+	UCharacterMovementComponent* MovementComponent;
 };
 
