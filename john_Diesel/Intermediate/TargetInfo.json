@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "john_Diesel",
+			"Path": "E:\\Cal Norwood\\Documents\\john_Diesel\\Source\\john_Diesel.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "john_DieselEditor",
+			"Path": "E:\\Cal Norwood\\Documents\\john_Diesel\\Source\\john_DieselEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

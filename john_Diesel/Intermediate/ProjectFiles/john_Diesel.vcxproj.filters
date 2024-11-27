@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\john_Diesel.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\john_Diesel.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\john_DieselEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\john_Diesel">
+      <UniqueIdentifier>{7E9676D3-1CA1-3438-A78C-4882EA8BC422}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\john_Diesel\john_Diesel.Build.cs">
+      <Filter>Source\john_Diesel</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\john_Diesel\john_Diesel.cpp">
+      <Filter>Source\john_Diesel</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\john_Diesel\john_Diesel.h">
+      <Filter>Source\john_Diesel</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\john_Diesel\john_DieselCharacter.cpp">
+      <Filter>Source\john_Diesel</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\john_Diesel\john_DieselCharacter.h">
+      <Filter>Source\john_Diesel</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\john_Diesel\john_DieselGameMode.cpp">
+      <Filter>Source\john_Diesel</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\john_Diesel\john_DieselGameMode.h">
+      <Filter>Source\john_Diesel</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\john_Diesel\john_DieselProjectile.cpp">
+      <Filter>Source\john_Diesel</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\john_Diesel\john_DieselProjectile.h">
+      <Filter>Source\john_Diesel</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\john_Diesel\TP_PickUpComponent.cpp">
+      <Filter>Source\john_Diesel</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\john_Diesel\TP_PickUpComponent.h">
+      <Filter>Source\john_Diesel</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\john_Diesel\TP_WeaponComponent.cpp">
+      <Filter>Source\john_Diesel</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\john_Diesel\TP_WeaponComponent.h">
+      <Filter>Source\john_Diesel</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
