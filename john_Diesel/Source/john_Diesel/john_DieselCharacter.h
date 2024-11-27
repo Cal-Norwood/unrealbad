@@ -39,6 +39,9 @@ class Ajohn_DieselCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	class UInputAction* MoveAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
+	class UInputAction* RollAction;
+
 	
 public:
 	Ajohn_DieselCharacter();
@@ -68,6 +71,8 @@ protected:
 	/** Called for movement input */
 	void Move(const FInputActionValue& Value);
 
+	void Roll(const FInputActionValue& Value);
+
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
 
@@ -77,7 +82,10 @@ protected:
 	UFUNCTION(BlueprintCallable)
 	void SetupNormalMovement();
 
+	float rotationRate;
 	bool InSpace = false;
+
+	virtual void Tick(float DeltaSeconds) override;
 
 protected:
 	// APawn interface

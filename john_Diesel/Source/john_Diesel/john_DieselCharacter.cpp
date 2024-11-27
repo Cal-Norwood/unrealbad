@@ -60,6 +60,16 @@ void Ajohn_DieselCharacter::BeginPlay()
 
 //////////////////////////////////////////////////////////////////////////// Input
 
+void Ajohn_DieselCharacter::Tick(float DeltaSeconds)
+{
+	ACharacter::Tick(DeltaSeconds);
+
+	if(InSpace)
+	{
+		FirstPersonCameraComponent->AddRelativeRotation(FRotator(0, 0, rotationRate));
+	}
+}
+
 void Ajohn_DieselCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	// Set up action bindings
@@ -74,6 +84,8 @@ void Ajohn_DieselCharacter::SetupPlayerInputComponent(class UInputComponent* Pla
 
 		//Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &Ajohn_DieselCharacter::Look);
+
+		EnhancedInputComponent->BindAction(RollAction, ETriggerEvent::Triggered, this, &Ajohn_DieselCharacter::Roll);
 	}
 }
 
@@ -91,9 +103,22 @@ void Ajohn_DieselCharacter::Move(const FInputActionValue& Value)
 	}
 	else if (InSpace)
 	{
-		UE_LOG(LogTemp, Display, TEXT("Movement"));
 		AddMovementInput(FirstPersonCameraComponent->GetForwardVector() ,MovementVector.Y);
 		AddMovementInput(FirstPersonCameraComponent->GetRightVector() ,MovementVector.X);
+	}
+}
+
+void Ajohn_DieselCharacter::Roll(const FInputActionValue& Value)
+{
+	float rotationDir = Value.Get<float>();
+
+	if(rotationRate > -2 && rotationDir < 0)
+	{
+		rotationRate += rotationDir * 0.01;
+	}
+	else if(rotationRate < 2 && rotationDir > 0)
+	{
+		rotationRate += rotationDir * 0.01;
 	}
 }
 
@@ -104,9 +129,35 @@ void Ajohn_DieselCharacter::Look(const FInputActionValue& Value)
 
 	if (Controller != nullptr)
 	{
-		// add yaw and pitch input to controller
-		AddControllerYawInput(LookAxisVector.X);
-		AddControllerPitchInput(LookAxisVector.Y);
+		// Get the current camera rotation (we're concerned with roll and pitch)
+		FRotator CameraRotation = FirstPersonCameraComponent->GetComponentRotation();
+
+		// Get the current roll from the camera's rotation (we want to counteract this)
+		float CameraRoll = CameraRotation.Roll;
+
+		// Adjust the look axis vector based on the camera's roll
+		FVector2D AdjustedLookAxis = LookAxisVector;
+
+		// If the camera has roll, adjust the input to account for that
+		if (FMath::Abs(CameraRoll) > 0.0f)
+		{
+			// Calculate how much the yaw axis is affected by the roll
+			// This adjusts the X (yaw) axis to compensate for the camera's roll
+			float RollAdjustedYaw = LookAxisVector.X * FMath::Cos(FMath::DegreesToRadians(CameraRoll))
+									- LookAxisVector.Y * FMath::Sin(FMath::DegreesToRadians(CameraRoll));
+            
+			// Adjust pitch similarly, but usually, pitch is less affected by roll
+			float RollAdjustedPitch = LookAxisVector.X * FMath::Sin(FMath::DegreesToRadians(CameraRoll))
+									  + LookAxisVector.Y * FMath::Cos(FMath::DegreesToRadians(CameraRoll));
+            
+			// Set the adjusted look axis values
+			AdjustedLookAxis.X = RollAdjustedYaw;
+			AdjustedLookAxis.Y = RollAdjustedPitch;
+		}
+
+		// Apply the corrected input to the controller
+		AddControllerYawInput(AdjustedLookAxis.X);
+		AddControllerPitchInput(AdjustedLookAxis.Y);
 	}
 }
 

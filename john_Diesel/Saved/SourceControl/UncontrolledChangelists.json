@@ -6,6 +6,8 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"E:/Cal Norwood/Documents/Github/unrealbad/john_Diesel/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset",
+				"E:/Cal Norwood/Documents/Github/unrealbad/john_Diesel/Content/FirstPerson/Input/IMC_Default.uasset",
+				"E:/Cal Norwood/Documents/Github/unrealbad/john_Diesel/Content/FirstPerson/Input/Actions/IA_Roll.uasset",
 				"E:/Cal Norwood/Documents/john_Diesel/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
 			]
 		}
