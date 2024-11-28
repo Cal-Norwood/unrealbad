@@ -71,6 +71,8 @@ protected:
 	void SetupNormalMovement();
 
 	float rotationRate;
+
+	
 	bool InSpace = false;
 
 	virtual void Tick(float DeltaSeconds) override;
