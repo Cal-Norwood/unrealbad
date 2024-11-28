@@ -170,15 +170,15 @@ void EmptyLinkFunctionForGeneratedCodeShip() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AShip);
 	AShip::~AShip() {}
-	struct Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_Private_Ship_h_Statics
+	struct Z_CompiledInDeferFile_FID_SpaceTruck_unrealbad_john_Diesel_Source_john_Diesel_Private_Ship_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_Private_Ship_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SpaceTruck_unrealbad_john_Diesel_Source_john_Diesel_Private_Ship_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_AShip, AShip::StaticClass, TEXT("AShip"), &Z_Registration_Info_UClass_AShip, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShip), 3523179038U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_Private_Ship_h_3114256583(TEXT("/Script/john_Diesel"),
-		Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_Private_Ship_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_Private_Ship_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SpaceTruck_unrealbad_john_Diesel_Source_john_Diesel_Private_Ship_h_3114256583(TEXT("/Script/john_Diesel"),
+		Z_CompiledInDeferFile_FID_SpaceTruck_unrealbad_john_Diesel_Source_john_Diesel_Private_Ship_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SpaceTruck_unrealbad_john_Diesel_Source_john_Diesel_Private_Ship_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

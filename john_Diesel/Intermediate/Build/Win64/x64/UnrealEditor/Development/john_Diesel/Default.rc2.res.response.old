@@ -71,5 +71,5 @@
 /DBUILD_ICON_FILE_NAME="\"..\\Build\\Windows\\Resources\\Default.ico\""
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_IDENTIFIER=john_Diesel
-/fo "E:\Cal Norwood\Documents\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\Default.rc2.res"
+/fo "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"
