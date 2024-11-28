@@ -32,111 +32,14 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 		P_THIS->SetupSpaceMovement();
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(Ajohn_DieselCharacter::execGetHasRifle)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		*(bool*)Z_Param__Result=P_THIS->GetHasRifle();
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(Ajohn_DieselCharacter::execSetHasRifle)
-	{
-		P_GET_UBOOL(Z_Param_bNewHasRifle);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->SetHasRifle(Z_Param_bNewHasRifle);
-		P_NATIVE_END;
-	}
 	void Ajohn_DieselCharacter::StaticRegisterNativesAjohn_DieselCharacter()
 	{
 		UClass* Class = Ajohn_DieselCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "GetHasRifle", &Ajohn_DieselCharacter::execGetHasRifle },
-			{ "SetHasRifle", &Ajohn_DieselCharacter::execSetHasRifle },
 			{ "SetupNormalMovement", &Ajohn_DieselCharacter::execSetupNormalMovement },
 			{ "SetupSpaceMovement", &Ajohn_DieselCharacter::execSetupSpaceMovement },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle_Statics
-	{
-		struct john_DieselCharacter_eventGetHasRifle_Parms
-		{
-			bool ReturnValue;
-		};
-		static void NewProp_ReturnValue_SetBit(void* Obj);
-		static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle_Statics::NewProp_ReturnValue_SetBit(void* Obj)
-	{
-		((john_DieselCharacter_eventGetHasRifle_Parms*)Obj)->ReturnValue = 1;
-	}
-	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(john_DieselCharacter_eventGetHasRifle_Parms), &Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Weapon" },
-		{ "Comment", "/** Getter for the bool */" },
-		{ "ModuleRelativePath", "john_DieselCharacter.h" },
-		{ "ToolTip", "Getter for the bool" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_Ajohn_DieselCharacter, nullptr, "GetHasRifle", nullptr, nullptr, sizeof(Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle_Statics::john_DieselCharacter_eventGetHasRifle_Parms), Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle_Statics
-	{
-		struct john_DieselCharacter_eventSetHasRifle_Parms
-		{
-			bool bNewHasRifle;
-		};
-		static void NewProp_bNewHasRifle_SetBit(void* Obj);
-		static const UECodeGen_Private::FBoolPropertyParams NewProp_bNewHasRifle;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	void Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle_Statics::NewProp_bNewHasRifle_SetBit(void* Obj)
-	{
-		((john_DieselCharacter_eventSetHasRifle_Parms*)Obj)->bNewHasRifle = 1;
-	}
-	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle_Statics::NewProp_bNewHasRifle = { "bNewHasRifle", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(john_DieselCharacter_eventSetHasRifle_Parms), &Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle_Statics::NewProp_bNewHasRifle_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle_Statics::NewProp_bNewHasRifle,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Weapon" },
-		{ "Comment", "/** Setter to set the bool */" },
-		{ "ModuleRelativePath", "john_DieselCharacter.h" },
-		{ "ToolTip", "Setter to set the bool" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_Ajohn_DieselCharacter, nullptr, "SetHasRifle", nullptr, nullptr, sizeof(Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle_Statics::john_DieselCharacter_eventSetHasRifle_Parms), Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle_Statics::FuncParams);
-		}
-		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_Ajohn_DieselCharacter_SetupNormalMovement_Statics
 	{
@@ -215,14 +118,13 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_MoveAction;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_RollAction_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_RollAction;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_LookAction_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_bHasRifle_MetaData[];
-#endif
-		static void NewProp_bHasRifle_SetBit(void* Obj);
-		static const UECodeGen_Private::FBoolPropertyParams NewProp_bHasRifle;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -232,8 +134,6 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_john_Diesel,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_Ajohn_DieselCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_Ajohn_DieselCharacter_GetHasRifle, "GetHasRifle" }, // 2558504903
-		{ &Z_Construct_UFunction_Ajohn_DieselCharacter_SetHasRifle, "SetHasRifle" }, // 3333334300
 		{ &Z_Construct_UFunction_Ajohn_DieselCharacter_SetupNormalMovement, "SetupNormalMovement" }, // 803671620
 		{ &Z_Construct_UFunction_Ajohn_DieselCharacter_SetupSpaceMovement, "SetupSpaceMovement" }, // 1712563956
 	};
@@ -296,6 +196,14 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_MoveAction = { "MoveAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(Ajohn_DieselCharacter, MoveAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_MoveAction_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_MoveAction_MetaData)) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_RollAction_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "john_DieselCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_RollAction = { "RollAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(Ajohn_DieselCharacter, RollAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_RollAction_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_RollAction_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_LookAction_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Input" },
@@ -305,27 +213,14 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(Ajohn_DieselCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_LookAction_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_LookAction_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_bHasRifle_MetaData[] = {
-		{ "Category", "Weapon" },
-		{ "Comment", "/** Bool for AnimBP to switch to another animation set */" },
-		{ "ModuleRelativePath", "john_DieselCharacter.h" },
-		{ "ToolTip", "Bool for AnimBP to switch to another animation set" },
-	};
-#endif
-	void Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_bHasRifle_SetBit(void* Obj)
-	{
-		((Ajohn_DieselCharacter*)Obj)->bHasRifle = 1;
-	}
-	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_bHasRifle = { "bHasRifle", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, sizeof(bool), sizeof(Ajohn_DieselCharacter), &Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_bHasRifle_SetBit, METADATA_PARAMS(Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_bHasRifle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_bHasRifle_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_Ajohn_DieselCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_Mesh1P,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_FirstPersonCameraComponent,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_DefaultMappingContext,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_JumpAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_MoveAction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_RollAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_LookAction,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_bHasRifle,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_Ajohn_DieselCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<Ajohn_DieselCharacter>::IsAbstract,
@@ -364,9 +259,9 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_Ajohn_DieselCharacter, Ajohn_DieselCharacter::StaticClass, TEXT("Ajohn_DieselCharacter"), &Z_Registration_Info_UClass_Ajohn_DieselCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(Ajohn_DieselCharacter), 3153571578U) },
+		{ Z_Construct_UClass_Ajohn_DieselCharacter, Ajohn_DieselCharacter::StaticClass, TEXT("Ajohn_DieselCharacter"), &Z_Registration_Info_UClass_Ajohn_DieselCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(Ajohn_DieselCharacter), 3057845155U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_1998027907(TEXT("/Script/john_Diesel"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_1563072701(TEXT("/Script/john_Diesel"),
 		Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

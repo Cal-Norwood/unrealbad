@@ -1,7 +1,9 @@
 "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\UnrealEditor\Inc\john_Diesel\UHT\john_Diesel.init.gen.cpp"
 /I .
+/I "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Source\john_Diesel\Private"
 /I "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\UnrealEditor\Inc\john_Diesel\UHT"
 /I "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Source"
+/I "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Source\john_Diesel\Public"
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
 /I Runtime

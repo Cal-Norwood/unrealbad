@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\intermediate\\build\\win64\\unrealeditor\\inc\\john_diesel\\uht\\gamemanager.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\intermediate\\build\\win64\\x64\\john_dieseleditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_1.h.pch",
+        "Includes": [
+            "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\john_diesel\\definitions.john_diesel.h",
+            "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\source\\john_diesel\\public\\gamemanager.h",
+            "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\intermediate\\build\\win64\\unrealeditor\\inc\\john_diesel\\uht\\gamemanager.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

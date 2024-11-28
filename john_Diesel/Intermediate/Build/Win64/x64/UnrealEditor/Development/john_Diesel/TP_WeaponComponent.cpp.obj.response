@@ -1,5 +1,6 @@
 "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Source\john_Diesel\TP_WeaponComponent.cpp"
 /I .
+/I "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Source\john_Diesel\Private"
 /I "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\UnrealEditor\Inc\john_Diesel\UHT"
 /I "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Source"
 /I Runtime\TraceLog\Public

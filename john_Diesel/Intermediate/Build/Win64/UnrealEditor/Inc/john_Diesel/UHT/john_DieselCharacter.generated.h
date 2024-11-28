@@ -18,17 +18,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_20_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSetupNormalMovement); \
-	DECLARE_FUNCTION(execSetupSpaceMovement); \
-	DECLARE_FUNCTION(execGetHasRifle); \
-	DECLARE_FUNCTION(execSetHasRifle);
+	DECLARE_FUNCTION(execSetupSpaceMovement);
 
 
 #define FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSetupNormalMovement); \
-	DECLARE_FUNCTION(execSetupSpaceMovement); \
-	DECLARE_FUNCTION(execGetHasRifle); \
-	DECLARE_FUNCTION(execSetHasRifle);
+	DECLARE_FUNCTION(execSetupSpaceMovement);
 
 
 #define FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_20_ACCESSORS

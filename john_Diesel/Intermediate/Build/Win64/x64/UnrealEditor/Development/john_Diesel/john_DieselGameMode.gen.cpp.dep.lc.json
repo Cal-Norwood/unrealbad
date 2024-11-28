@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\intermediate\\build\\win64\\unrealeditor\\inc\\john_diesel\\uht\\john_dieselgamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\intermediate\\build\\win64\\x64\\john_dieseleditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_1.h.pch",
+        "Includes": [
+            "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\john_diesel\\definitions.john_diesel.h",
+            "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\source\\john_diesel\\john_dieselgamemode.h",
+            "e:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "e:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "e:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "e:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\intermediate\\build\\win64\\unrealeditor\\inc\\john_diesel\\uht\\john_dieselgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
