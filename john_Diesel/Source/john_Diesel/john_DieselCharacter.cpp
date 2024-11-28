@@ -18,8 +18,6 @@
 
 Ajohn_DieselCharacter::Ajohn_DieselCharacter()
 {
-	// Character doesnt have a rifle at start
-	bHasRifle = false;
 	
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
@@ -165,8 +163,10 @@ void Ajohn_DieselCharacter::SetupSpaceMovement()
 {
 	InSpace = true;
 	MovementComponent->GravityScale = 0;
-	MovementComponent->SetMovementMode(MOVE_Flying);
 	MovementComponent->BrakingFrictionFactor = 0;
+	MovementComponent->MaxAcceleration = 100;
+	MovementComponent->SetMovementMode(MOVE_Flying);
+	
 }
 
 void Ajohn_DieselCharacter::SetupNormalMovement()
@@ -175,14 +175,7 @@ void Ajohn_DieselCharacter::SetupNormalMovement()
 	MovementComponent->GravityScale = 1;
 	MovementComponent->SetMovementMode(MOVE_Walking);
 	MovementComponent->BrakingFrictionFactor = 2;
-}
-
-void Ajohn_DieselCharacter::SetHasRifle(bool bNewHasRifle)
-{
-	bHasRifle = bNewHasRifle;
-}
-
-bool Ajohn_DieselCharacter::GetHasRifle()
-{
-	return bHasRifle;
+	MovementComponent->MaxAcceleration = 2048;
+	FirstPersonCameraComponent->SetRelativeRotation(FRotator(0, 0, 0));
+	rotationRate = 0;
 }
