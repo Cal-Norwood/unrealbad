@@ -1,9 +1,9 @@
-"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\UnrealEditor\Inc\john_Diesel\UHT\john_DieselProjectile.gen.cpp"
+E:\XBOX\SpaceTruck\unrealbad\john_Diesel\Intermediate\Build\Win64\UnrealEditor\Inc\john_Diesel\UHT\john_DieselProjectile.gen.cpp
 /I .
-/I "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Source\john_Diesel\Private"
-/I "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\UnrealEditor\Inc\john_Diesel\UHT"
-/I "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Source"
-/I "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Source\john_Diesel\Public"
+/I E:\XBOX\SpaceTruck\unrealbad\john_Diesel\Source\john_Diesel\Private
+/I E:\XBOX\SpaceTruck\unrealbad\john_Diesel\Intermediate\Build\Win64\UnrealEditor\Inc\john_Diesel\UHT
+/I E:\XBOX\SpaceTruck\unrealbad\john_Diesel\Source
+/I E:\XBOX\SpaceTruck\unrealbad\john_Diesel\Source\john_Diesel\Public
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
 /I Runtime
@@ -287,17 +287,17 @@
 /external:I ThirdParty\mimalloc\include
 /external:I ThirdParty\LibTiff\Source\Win64
 /external:I ThirdParty\LibTiff\Source
-/external:I "D:\Program Files\Visual Studio 2022\VC\Tools\MSVC\14.34.31933\INCLUDE"
-/external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
-/external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
-/external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
-/external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\john_DieselEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h"
-/FI"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\Definitions.john_Diesel.h"
-/Yu"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\john_DieselEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h"
-/Fp"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\john_DieselEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.pch"
-/Fo"E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_DieselProjectile.gen.cpp.obj"
-/sourceDependencies "E:\Cal Norwood\Documents\Github\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_DieselProjectile.gen.cpp.dep.json"
+/external:I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\INCLUDE"
+/external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"
+/external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
+/external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
+/external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
+/FI"E:\XBOX\SpaceTruck\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\john_DieselEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h"
+/FI"E:\XBOX\SpaceTruck\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\Definitions.john_Diesel.h"
+/Yu"E:\XBOX\SpaceTruck\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\john_DieselEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h"
+/Fp"E:\XBOX\SpaceTruck\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\john_DieselEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.pch"
+/Fo"E:\XBOX\SpaceTruck\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_DieselProjectile.gen.cpp.obj"
+/sourceDependencies E:\XBOX\SpaceTruck\unrealbad\john_Diesel\Intermediate\Build\Win64\x64\UnrealEditor\Development\john_Diesel\john_DieselProjectile.gen.cpp.dep.json
 /Zc:inline
 /nologo
 /Oi

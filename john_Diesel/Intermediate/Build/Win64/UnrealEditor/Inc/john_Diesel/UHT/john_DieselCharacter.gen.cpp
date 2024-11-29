@@ -122,6 +122,10 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_RollAction;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_playerSpaceAcceleration_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_playerSpaceAcceleration;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_LookAction_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
@@ -204,6 +208,13 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_RollAction = { "RollAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(Ajohn_DieselCharacter, RollAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_RollAction_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_RollAction_MetaData)) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_playerSpaceAcceleration_MetaData[] = {
+		{ "Category", "john_DieselCharacter" },
+		{ "ModuleRelativePath", "john_DieselCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_playerSpaceAcceleration = { "playerSpaceAcceleration", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(Ajohn_DieselCharacter, playerSpaceAcceleration), METADATA_PARAMS(Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_playerSpaceAcceleration_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_playerSpaceAcceleration_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_LookAction_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Input" },
@@ -220,6 +231,7 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_JumpAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_MoveAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_RollAction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_playerSpaceAcceleration,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Ajohn_DieselCharacter_Statics::NewProp_LookAction,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_Ajohn_DieselCharacter_Statics::StaticCppClassTypeInfo = {
@@ -254,15 +266,15 @@ void EmptyLinkFunctionForGeneratedCodejohn_DieselCharacter() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(Ajohn_DieselCharacter);
 	Ajohn_DieselCharacter::~Ajohn_DieselCharacter() {}
-	struct Z_CompiledInDeferFile_FID_SpaceTruck_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics
+	struct Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SpaceTruck_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_Ajohn_DieselCharacter, Ajohn_DieselCharacter::StaticClass, TEXT("Ajohn_DieselCharacter"), &Z_Registration_Info_UClass_Ajohn_DieselCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(Ajohn_DieselCharacter), 3057845155U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_Ajohn_DieselCharacter, Ajohn_DieselCharacter::StaticClass, TEXT("Ajohn_DieselCharacter"), &Z_Registration_Info_UClass_Ajohn_DieselCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(Ajohn_DieselCharacter), 2561228330U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SpaceTruck_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_1563072701(TEXT("/Script/john_Diesel"),
-		Z_CompiledInDeferFile_FID_SpaceTruck_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SpaceTruck_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_707424126(TEXT("/Script/john_Diesel"),
+		Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Cal_Norwood_Documents_Github_unrealbad_john_Diesel_Source_john_Diesel_john_DieselCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
