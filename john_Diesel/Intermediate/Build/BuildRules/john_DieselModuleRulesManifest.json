@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"E:\\Cal Norwood\\Documents\\Github\\unrealbad\\john_Diesel\\Source\\john_Diesel\\john_Diesel.Build.cs",
-		"E:\\Cal Norwood\\Documents\\Github\\unrealbad\\john_Diesel\\Source\\john_Diesel.Target.cs",
-		"E:\\Cal Norwood\\Documents\\Github\\unrealbad\\john_Diesel\\Source\\john_DieselEditor.Target.cs"
+		"E:\\XBOX\\SpaceTruck\\unrealbad\\john_Diesel\\Source\\john_Diesel\\john_Diesel.Build.cs",
+		"E:\\XBOX\\SpaceTruck\\unrealbad\\john_Diesel\\Source\\john_Diesel.Target.cs",
+		"E:\\XBOX\\SpaceTruck\\unrealbad\\john_Diesel\\Source\\john_DieselEditor.Target.cs"
 	],
 	"EngineVersion": "5.2.1"
 }
