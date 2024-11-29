@@ -22,7 +22,7 @@ void AShip::BeginPlay()
 
 		selectedFuels.Add(fuelTypes[randomNum]);
 
-		float randomfloat = FMath::RandRange(0, 100);
+		float randomfloat = FMath::RandRange(40, 100);
 
 		requiredFuelAmounts.Add(randomfloat);
 	}

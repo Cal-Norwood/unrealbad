@@ -50,7 +50,10 @@ protected:
 	virtual void BeginPlay();
 
 public:
-		
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	float playerSpaceAcceleration = 300; 
+	
 	/** Look Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	class UInputAction* LookAction;
