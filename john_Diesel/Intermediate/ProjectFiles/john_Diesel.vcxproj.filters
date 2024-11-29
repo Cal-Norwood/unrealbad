@@ -60,17 +60,23 @@
     <ClInclude Include="..\..\Source\john_Diesel\john_DieselProjectile.h">
       <Filter>Source\john_Diesel</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\john_Diesel\TP_PickUpComponent.cpp">
-      <Filter>Source\john_Diesel</Filter>
+    <Filter Include="Source\john_Diesel\Private">
+      <UniqueIdentifier>{F8B04D29-969A-3241-AC44-D5E6F5CB7F55}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\john_Diesel\Private\GameManager.cpp">
+      <Filter>Source\john_Diesel\Private</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\john_Diesel\TP_PickUpComponent.h">
-      <Filter>Source\john_Diesel</Filter>
+    <ClCompile Include="..\..\Source\john_Diesel\Private\Ship.cpp">
+      <Filter>Source\john_Diesel\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\john_Diesel\Private\Ship.h">
+      <Filter>Source\john_Diesel\Private</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\john_Diesel\TP_WeaponComponent.cpp">
-      <Filter>Source\john_Diesel</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\john_Diesel\TP_WeaponComponent.h">
-      <Filter>Source\john_Diesel</Filter>
+    <Filter Include="Source\john_Diesel\Public">
+      <UniqueIdentifier>{2B1EB6EE-F0B5-3169-BE18-24CDFFABED38}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\john_Diesel\Public\GameManager.h">
+      <Filter>Source\john_Diesel\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
