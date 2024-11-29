@@ -164,7 +164,7 @@ void Ajohn_DieselCharacter::SetupSpaceMovement()
 	InSpace = true;
 	MovementComponent->GravityScale = 0;
 	MovementComponent->BrakingFrictionFactor = 0;
-	MovementComponent->MaxAcceleration = 100;
+	MovementComponent->MaxAcceleration = playerSpaceAcceleration;
 	MovementComponent->SetMovementMode(MOVE_Flying);
 	
 }

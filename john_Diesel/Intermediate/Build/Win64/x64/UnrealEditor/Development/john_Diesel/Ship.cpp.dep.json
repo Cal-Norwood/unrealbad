@@ -1,13 +1,13 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "e:\\xbox\\spacetruck\\unrealbad\\john_diesel\\source\\john_diesel\\private\\ship.cpp",
+        "Source": "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\source\\john_diesel\\private\\ship.cpp",
         "ProvidedModule": "",
-        "PCH": "e:\\xbox\\spacetruck\\unrealbad\\john_diesel\\intermediate\\build\\win64\\x64\\john_dieseleditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_1.h.pch",
+        "PCH": "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\intermediate\\build\\win64\\x64\\john_dieseleditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_1.h.pch",
         "Includes": [
-            "e:\\xbox\\spacetruck\\unrealbad\\john_diesel\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\john_diesel\\definitions.john_diesel.h",
-            "e:\\xbox\\spacetruck\\unrealbad\\john_diesel\\source\\john_diesel\\private\\ship.h",
-            "e:\\xbox\\spacetruck\\unrealbad\\john_diesel\\intermediate\\build\\win64\\unrealeditor\\inc\\john_diesel\\uht\\ship.generated.h"
+            "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\john_diesel\\definitions.john_diesel.h",
+            "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\source\\john_diesel\\private\\ship.h",
+            "e:\\cal norwood\\documents\\github\\unrealbad\\john_diesel\\intermediate\\build\\win64\\unrealeditor\\inc\\john_diesel\\uht\\ship.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
