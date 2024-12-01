@@ -16,7 +16,7 @@ public:
 	AShip();
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FString shipName;
+	FString shipName = "DefaultShip";
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FString> fuelTypes;

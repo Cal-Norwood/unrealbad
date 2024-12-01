@@ -28,8 +28,8 @@ void AGameManager::Tick(float DeltaTime)
 
 void AGameManager::SpawnShip()
 {
-	FVector SpawnLocation = FVector(-10000, 2000, 0); // Example location
-	FRotator SpawnRotation = FRotator(0.0f, -90.0f, 0.0f);
+	FVector SpawnLocation = FVector(2100, 10000, 80); // Example location
+	FRotator SpawnRotation = FRotator(0.0f, 180, 0.0f);
 
 	// Spawn parameters
 	FActorSpawnParameters SpawnParams;
